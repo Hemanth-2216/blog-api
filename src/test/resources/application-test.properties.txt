@@ -1,0 +1,28 @@
+# =============================
+# H2 In-Memory Database for Testing
+# =============================
+spring.datasource.url=jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;MODE=MySQL
+spring.datasource.driverClassName=org.h2.Driver
+spring.datasource.username=sa
+spring.datasource.password=
+spring.jpa.hibernate.ddl-auto=create-drop
+spring.jpa.show-sql=false
+
+# =============================
+# JWT for Tests
+# =============================
+app.jwt.secret=testsecretkey123456789012345678901234
+app.jwt.expiration=3600000
+
+# =============================
+# Disable Swagger in Tests
+# =============================
+springdoc.api-docs.enabled=false
+springdoc.swagger-ui.enabled=false
+
+# =============================
+# Minimal Logging in Tests
+# =============================
+logging.level.root=ERROR
+logging.level.org.springframework=ERROR
+logging.level.com.blog.application=ERROR
